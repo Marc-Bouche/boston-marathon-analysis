@@ -29,69 +29,93 @@
 
 # BUSINESS QUESTION
 
-**"How can customized marathon training programs improve race performance by accounting for demographic, pacing, and weather-related factors?"**
+**"How can we tailor marathon training programs to optimize finish times by understanding key performance factors across checkpoints, demographic influences, and pacing strategies?"**
 
 ---
+# Hypotheses Overview
 
-# HYPOTHESIS
-
-## H1a (Weather Related): Weather Impact on Pacing Consistency
-> *Hypothesis*: Runners experience slower pacing and longer finishing times under adverse weather conditions (e.g., high temperatures, humidity, or wind).
-> *Training Outcome*: Tailoring training programs to include sessions in similar conditions may improve resilience and pacing consistency on race day.
-
----
-
-## H1b (Weather Related): Optimal Weather Conditions
-> *Hypothesis*: Runners who participate under mild conditions (e.g., moderate temperatures, low humidity) are more likely to achieve negative splits (faster times in the second half of the race) compared to those running in extreme weather.
-> *Training Outcome*: Training programs that simulate ideal weather conditions may yield more substantial performance improvements, particularly for pacing in the latter race stages.
+## H1: Demographic Influence
+**Hypothesis:** Age and gender significantly impact pacing and checkpoint times.  
+**Training Outcome:** This suggests a need for customized training programs for different demographic groups.  
+**Objective:** Determine how demographic factors (age, gender) affect pacing and checkpoint times, guiding customized training for different groups.  
+**Data Preparation:** 
+- Group runners in Data set 1 by age and gender.
+- Calculate average paces at each checkpoint and overall finishing times for each group.  
+**Analysis:** 
+- Compare pacing patterns and finishing times across different demographics.
+- Use statistical tests (e.g., ANOVA or t-tests) to identify significant differences in performance based on age and gender.  
+**Outcome:** Establish if and how age and gender impact performance, providing a basis for personalized training programs for different demographics.
 
 ---
 
 ## H2: Checkpoint Drop-Off
-> *Hypothesis*: Runners who experience a significant time increase between specific checkpoints (e.g., 20K to 25K) are more likely to finish with slower times.
-> *Training Outcome*: Targeted endurance training in those segments could improve overall performance.
+**Hypothesis:** Runners who experience a significant time increase between specific checkpoints (e.g., 20K to 25K) are more likely to finish with slower times.  
+**Training Outcome:** This indicates that targeted endurance training in those segments could improve overall performance.  
+**Objective:** Identify if a large increase in time between specific checkpoints indicates a lower overall performance.  
+**Data Preparation:** 
+- Calculate time differences between critical checkpoints in Data set 1, focusing on the 20K to 25K segment.
+- Define a threshold for what constitutes a “significant time increase” based on average or median time differences.  
+**Analysis:** 
+- Segment runners into groups with and without significant time increases and compare their finishing times.
+- Analyze if there are specific weather conditions at these checkpoints (from Data set 2) that correlate with increased drop-offs.  
+**Outcome:** Identify checkpoints where pacing tends to drop, suggesting sections where targeted endurance training may benefit runners experiencing performance decreases.
 
 ---
 
-## H3: Demographic Influence
-> *Hypothesis*: Age and gender significantly impact pacing and checkpoint times.
-> *Training Outcome*: Customized training programs may benefit different demographic groups based on their performance tendencies.
+## H3: Top Performer Strategy
+**Hypothesis:** Elite runners follow distinct pacing strategies (such as quicker early segments or steady increases) compared to non-elite runners.  
+**Training Outcome:** This could be modeled and applied to personalized training.  
+**Objective:** Identify distinct pacing strategies among elite runners and explore if these strategies can be used to guide non-elite runners.  
+**Data Preparation:** 
+- Classify runners as elite or non-elite based on their overall position in Data set 1 (e.g., top 5% of finishers).
+- Calculate pacing patterns of elite runners across checkpoints and determine common strategies (e.g., faster starts, steady pace).  
+**Analysis:** 
+- Compare the pacing patterns of elite and non-elite runners.
+- Test if emulating elite pacing strategies is feasible and beneficial for non-elite runners.  
+**Outcome:** Identify pacing strategies used by top performers and evaluate their potential effectiveness if adapted for non-elite runners in training.
 
 ---
 
-## H4: Top Performer Strategy
-> *Hypothesis*: Elite runners follow distinct pacing strategies (such as quicker early segments or steady increases) compared to non-elite runners.
-> *Training Outcome*: Emulating elite pacing strategies may benefit non-elite runners when applied to personalized training.
+## H4: Improvement Potential
+**Hypothesis:** Runners who achieve negative splits (faster times in the second half) consistently finish with better overall times.  
+**Training Outcome:** This highlights a strategy for pacing adjustments and stamina training.  
+**Objective:** Determine if runners with negative splits (faster in the second half) consistently finish with better times.  
+**Data Preparation:** 
+- Identify runners who achieved negative splits in Data set 1 by comparing first and second-half times.
+- Calculate and categorize finishing times for runners with and without negative splits.  
+**Analysis:** 
+- Perform statistical comparisons to confirm if negative splits correlate with faster overall times.
+- Investigate if weather conditions (from Data set 2) impact the likelihood of achieving negative splits.  
+**Outcome:** Validate if training for negative splits improves performance, justifying a training focus on endurance and pacing consistency in the second half of races.
 
 ---
 
-## H5: Improvement Potential
-> *Hypothesis*: Runners who achieve negative splits (faster times in the second half) consistently finish with better overall times.
-> *Training Outcome*: Training focused on negative splits could enhance overall performance, particularly in stamina and pacing.
+## H5: Performance Improvement Over Time
+**Hypothesis:** Runners who participated in at least two Boston Marathons between 2015 and 2017 demonstrate significant improvements in pacing and finishing times compared to their initial performance.  
+**Training Outcome:** This improvement is influenced by factors such as training adjustments, familiarity with the race conditions, and weather variations.  
+**Objective:** Determine if runners who participated in multiple Boston Marathons show measurable improvements in their pacing and finishing times compared to their first race.  
+**Data Preparation:** 
+- Identify runners in Data set 1 who participated in at least two Boston Marathons between 2015 and 2017.
+- Extract performance metrics, including finishing times and pacing data, for each runner across all marathons.
+- Categorize data by initial performance (first marathon) and subsequent performances.  
+**Analysis:** 
+- Use statistical tests (e.g., paired t-tests or ANOVA)
+
 
 ---
 
-## H6: Performance Improvement Over Time
-> *Hypothesis*: Runners who participated in at least two Boston Marathons between 2015 and 2017 demonstrate significant improvements in pacing and finishing times compared to their initial performance.
-> *Training Outcome*: Improvements influenced by factors like training adjustments, familiarity with race conditions, and weather variations.
+| **Date**             | **Description**                                       |
+|-------------------------|-------------------------------------------------------|
+| Day 1 | Topic selection with business and hypothesis question, GitHub repo |
+| Day 2 | Topic selection with business and hypothesis question|
+| Day 3 | Data import, Data Cleaning  |
+| Day 4 | Data preparation, analysis, and vizualization for H1,H2 (SQL + Tableau) |
+| Day 5 | Data preparation, analysis, and vizualization for H3,H4,H5 (SQL + Tableau)|
+| Day 6 | Data preparation, analysis, and vizualization for H6  (Python = Tableau)|
+| Day 7 | Structuration & Organization of project: cleaning Notebook and MySQL files, update readme.file if any changes  |
+| Day 8 | Extra-day, in case any of the previous tasks listed above are not completed |
+| Day 9 | Final presenation preparation |
+| Day 10 | Final presentation, Github final touch ups |
 
----
-
-# ADDITIONAL CONSIDERATIONS
-
-- **Strava API**: Potentially collect additional race features (e.g., elevation data).
-- **Data Demographics**: Analyze runner demographics (age, gender) and average finishing times before hypothesis testing.
-- **Export Data to SQL**: For efficient querying and analysis.
-- **Create Visualizations**: Use Tableau for insightful, interactive visuals.
-
----
-
-# ANALYSIS FLOW
-
-1. **Preparation**: Data cleaning, merging datasets, and feature engineering.
-2. **Analysis**: Conduct statistical tests, regression analysis, and classification models.
-3. **Conclusion**: Evaluate hypotheses and document accepted or rejected hypotheses.
-
----
 
 
