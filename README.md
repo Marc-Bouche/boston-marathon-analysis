@@ -10,20 +10,17 @@
 - ### [**📘 Student Portal | Guideline**](https://my.ironhack.com/cohorts/64f9d71d3689ad002ac79d8b/lms/courses/course-v1:IRONHACK+DAFT4+202409_BER/modules/ironhack-course-chapter_8/units/ironhack-course-chapter_8-sequential-vertical_2)
 - ### [**📂 GitHub: Final Project**](https://github.com/Marc-Bouche/final-project)
 - ### [**🗨️ Presentation**](https://docs.google.com/presentation/d/1h-ykC9EjER1dtvpqKTz3Wb-pNkcOA2AqpSpj7C4jCyI/edit#slide=id.p)
-- ### [**🌤️ API Open-Meteo**](https://open-meteo.com/en/docs#hourly=temperature_2m,relative_humidity_2m,dew_point_2m,apparent_temperature,precipitation_probability,precipitation,rain,showers,pressure_msl,surface_pressure,cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,visibility,evapotranspiration,wind_speed_10m,wind_direction_10m,wind_gusts_10m,soil_temperature_0cm,soil_moisture_0_to_1cm,is_day&location_mode=csv_coordinates&csv_coordinates=42.355007,++-71.12906&forecast_days=1&forecast_hours=12)
 
 # PITCH
 
-> With a degree in Sport Training and a passion for long-distance running, you are driven to launch a company specializing in training programs for marathon runners. Leveraging your academic knowledge and firsthand experience as a dedicated runner, your goal is to design tailored, data-informed training solutions that help runners of all levels reach peak performance. From pacing strategies to personalized endurance plans, your programs will empower athletes to tackle marathon challenges and achieve new personal bests.
+> With a degree in Sport Training and a passion for long-distance running, you are driven to launch a company specializing in training programs for marathon runners. Leveraging your academic knowledge and firsthand experience as a dedicated runner, your goal is to design tailored, data-informed training solutions that help runners of all levels reach peak performance. From pacing strategies to personalized endurance plans, your analysis is here to help understand marathon challenges and tailor training programs for athletes.
 
 ---
 
 # DATA COLLECTION
 
-1. **Kaggle Datasets**: Marathon Boston results for the years 2015, 2016, and 2017.
-2. **Weather APIs**: (OpenWeatherMap, Weatherstack)
-   - **Purpose**: Weather conditions play a significant role in marathon performance. Using weather data (temperature, humidity, wind) for race days could help analyze performance relative to environmental factors.
-   - **Use**: By analyzing historical race data alongside weather patterns, you could predict optimal pacing adjustments for different weather scenarios and tailor training to prepare runners for diverse conditions.
+1. **Three Kaggle Datasets**: Marathon Boston results for the years 2015, 2016, and 2017.
+
 
 ---
 
@@ -32,7 +29,7 @@
 **"How can we tailor marathon training programs to optimize finish times by understanding key performance factors across checkpoints, demographic influences, and pacing strategies?"**
 
 ---
-# Hypotheses Overview
+# Hypothesis Overview
 
 ## H1: Demographic Influence
 **Hypothesis:** Age and gender significantly impact pacing and checkpoint times.  
@@ -48,17 +45,26 @@
 
 ---
 
-## H2: Checkpoint Drop-Off
-**Hypothesis:** Runners who experience a significant time increase between specific checkpoints (e.g., 20K to 25K) are more likely to finish with slower times.  
-**Training Outcome:** This indicates that targeted endurance training in those segments could improve overall performance.  
-**Objective:** Identify if a large increase in time between specific checkpoints indicates a lower overall performance.  
+## H2: Checkpoint Drop-Off - "Hitting the Marathon Wall"
+**Hypothesis:** Runners who experience a significant drop in pace between the 30K and 35K checkpoints (or between other segments such as 20K to 25K) are more likely to finish with slower times.
+
+**Definition "Hitting the Marathon Wall":** a condition of sudden fatigue and loss of energy which is caused by the depletion of glycogen stores in the liver and muscles.
+
+**Training Outcome:** If specific runners frequently experience pace drops at these checkpoints, they may benefit from targeted endurance and glycogen management training to sustain energy and reduce the likelihood of "hitting the wall."
+
+**Objective:** Identify runners who experience a substantial drop in pace around the 30K to 35K segment and analyze how this impacts their overall finishing times.
+
 **Data Preparation:** 
-- Calculate time differences between critical checkpoints in Data set 1, focusing on the 20K to 25K segment.
-- Define a threshold for what constitutes a “significant time increase” based on average or median time differences.  
+- Calculate pace differences between critical checkpoints, with a focus on the 30K to 35K segment.
+- Define a threshold for a “significant drop” in pace based on either average or median pace drops for all runners in these segments.
+  
 **Analysis:** 
-- Segment runners into groups with and without significant time increases and compare their finishing times.
-- Analyze if there are specific weather conditions at these checkpoints (from Data set 2) that correlate with increased drop-offs.  
-**Outcome:** Identify checkpoints where pacing tends to drop, suggesting sections where targeted endurance training may benefit runners experiencing performance decreases.
+- Segment runners into two groups: those with and without significant pace drops in the "wall" segment (30K to 35K).
+- Compare the finishing times between these groups and analyze other factors like age and gender to see if certain demographics are more affected by this drop.
+- Examine any external conditions (from Data set 2) such as temperature or humidity that may correlate with a higher likelihood of "hitting the wall."
+  
+**Outcome:** Identify the 30K to 35K checkpoint as a critical area where pace tends to drop significantly, suggesting potential benefit areas for targeted endurance and glycogen management training to improve overall performance.
+
 
 ---
 
@@ -70,8 +76,7 @@
 - Classify runners as elite or non-elite based on their overall position in Data set 1 (e.g., top 5% of finishers).
 - Calculate pacing patterns of elite runners across checkpoints and determine common strategies (e.g., faster starts, steady pace).  
 **Analysis:** 
-- Compare the pacing patterns of elite and non-elite runners.
-- Test if emulating elite pacing strategies is feasible and beneficial for non-elite runners.  
+- Compare the pacing patterns of elite and non-elite runners. 
 **Outcome:** Identify pacing strategies used by top performers and evaluate their potential effectiveness if adapted for non-elite runners in training.
 
 ---
@@ -95,20 +100,22 @@
 **Training Outcome:** This improvement is influenced by factors such as training adjustments, familiarity with the race conditions, and weather variations.  
 **Objective:** Determine if runners who participated in multiple Boston Marathons show measurable improvements in their pacing and finishing times compared to their first race.  
 **Data Preparation:** 
-- Identify runners in Data set 1 who participated in at least two Boston Marathons between 2015 and 2017.
+- Identify runnerswho participated in at least two Boston Marathons between 2015 and 2017.
 - Extract performance metrics, including finishing times and pacing data, for each runner across all marathons.
-- Categorize data by initial performance (first marathon) and subsequent performances.  
+- Categorize data by initial performance (first marathon) and subsequent performances.
+- Calculate the progression using first 
 **Analysis:** 
-- Use statistical tests (e.g., paired t-tests or ANOVA)
+- Use statistical tests (paired t-tests)
 
 
 ---
+# Schedule
 
 | **Date**             | **Description**                                       |
 |-------------------------|-------------------------------------------------------|
 | Day 1 | Topic selection with business and hypothesis question, GitHub repo |
 | Day 2 | Topic selection with business and hypothesis question|
-| Day 3 | Data import, Data Cleaning  |
+| Day 3 | Data import, Data Cleaning (Python)  |
 | Day 4 | Data preparation, analysis, and vizualization for H1,H2 (SQL + Tableau) |
 | Day 5 | Data preparation, analysis, and vizualization for H3,H4,H5 (SQL + Tableau)|
 | Day 6 | Data preparation, analysis, and vizualization for H6  (Python = Tableau)|
