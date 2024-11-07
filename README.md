@@ -31,21 +31,9 @@
 ---
 # Hypothesis Overview
 
-## H1: Demographic Influence
-**Hypothesis:** Age and gender significantly impact pacing and checkpoint times.  
-**Training Outcome:** This suggests a need for customized training programs for different demographic groups.  
-**Objective:** Determine how demographic factors (age, gender) affect pacing and checkpoint times, guiding customized training for different groups.  
-**Data Preparation:** 
-- Group runners in Data set 1 by age and gender.
-- Calculate average paces at each checkpoint and overall finishing times for each group.  
-**Analysis:** 
-- Compare pacing patterns and finishing times across different demographics.
-- Use statistical tests (e.g., ANOVA or t-tests) to identify significant differences in performance based on age and gender.  
-**Outcome:** Establish if and how age and gender impact performance, providing a basis for personalized training programs for different demographics.
-
 ---
 
-## H2: Checkpoint Drop-Off - "Hitting the Marathon Wall"
+## H1: Checkpoint Drop-Off - "Hitting the Marathon Wall"
 **Hypothesis:** Runners who experience a significant drop in pace between the 30K and 35K checkpoints (or between other segments such as 20K to 25K) are more likely to finish with slower times.
 
 **Definition "Hitting the Marathon Wall":** a condition of sudden fatigue and loss of energy which is caused by the depletion of glycogen stores in the liver and muscles.
@@ -68,7 +56,7 @@
 
 ---
 
-## H3: Top Performer Strategy
+## H2: Top Performer Strategy
 **Hypothesis:** Elite runners follow distinct pacing strategies (such as quicker early segments or steady increases) compared to non-elite runners.  
 **Training Outcome:** This could be modeled and applied to personalized training.  
 **Objective:** Identify distinct pacing strategies among elite runners and explore if these strategies can be used to guide non-elite runners.  
@@ -81,7 +69,7 @@
 
 ---
 
-## H4: Improvement Potential
+## H3: Improvement Potential
 **Hypothesis:** Runners who achieve negative splits (faster times in the second half) consistently finish with better overall times.  
 **Training Outcome:** This highlights a strategy for pacing adjustments and stamina training.  
 **Objective:** Determine if runners with negative splits (faster in the second half) consistently finish with better times.  
@@ -95,7 +83,7 @@
 
 ---
 
-## H5: Performance Improvement Over Time
+## H4: Performance Improvement Over Time
 **Hypothesis:** Runners who participated in at least two Boston Marathons between 2015 and 2017 demonstrate significant improvements in pacing and finishing times compared to their initial performance.  
 **Training Outcome:** This improvement is influenced by factors such as training adjustments, familiarity with the race conditions, and weather variations.  
 **Objective:** Determine if runners who participated in multiple Boston Marathons show measurable improvements in their pacing and finishing times compared to their first race.  
@@ -107,6 +95,30 @@
 **Analysis:** 
 - Use statistical tests (paired t-tests)
 
+---
+
+## H5: Time Prediction
+**Hypothesis:**Using demographic, pacing, and checkpoint data, we can predict marathon finish times accurately to help runners set realistic goals and identify training focus areas.
+
+**Training Outcome:**
+This model could assist in tailoring training programs to individual runner profiles based on predicted performance outcomes.
+
+**Objective:**
+Determine the effectiveness of machine learning models in predicting marathon finish times using a combination of demographic information and pacing data.
+
+**Data Preparation:** 
+- From Data set 1, gather demographic data (age, gender, etc.) along with pacing and checkpoint performance data for all runners.
+- Identify key features for the machine learning model, such as overall pace, checkpoint times, demographic variables, and any other relevant metrics.
+- Split the data into training and testing sets to evaluate model performance.
+- Create a ‘time’ bin of minutes. Prediction for second would be specific and very unlikely to get high score.
+
+**Analysis:**
+- Implement various machine learning algorithms (e.g., linear regression, random forest, or gradient boosting) to develop models that predict finish times based on the selected features.
+- Use cross-validation techniques to assess the robustness of the model and fine-tune hyperparameters for improved accuracy.
+- Analyze the model’s predictions against actual finish times to quantify performance and determine the model's effectiveness in helping runners set realistic goals.
+
+**Outcome:**
+- Validate whether machine learning can accurately predict marathon finish times, thus providing valuable insights for runners in establishing achievable goals and focusing their training efforts based on predictive outcomes. This could lead to more personalized and effective training programs that cater to individual runner profiles.
 
 ---
 # Schedule
