@@ -1,8 +1,0 @@
-ranking_bin,total_runners,negative_split_count,percent_negative_split
-"1. Top 1000",2989,280,9.37
-"2. Ranking: 1001-5000",11951,809,6.77
-"3. Ranking: 5001-10000",14935,763,5.11
-"4. Ranking: 10001-15000",14894,620,4.16
-"5. Ranking: 15001-20000",14878,536,3.60
-"6. Ranking: 20001-25000",14835,436,2.94
-"7. Ranking: 25001+",4556,53,1.16
