@@ -70,7 +70,7 @@
 ---
 
 ## H3: Improvement Potential
-**Hypothesis:** Runners who achieve negative splits (faster times in the second half) consistently finish with better overall times.  
+**Hypothesis:** Runners who achieve negative splits (faster times in the second half) finish, in average, with better overall times.’.  
 **Training Outcome:** This highlights a strategy for pacing adjustments and stamina training.  
 **Objective:** Determine if runners with negative splits (faster in the second half) consistently finish with better times.  
 **Data Preparation:** 
