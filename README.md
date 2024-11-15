@@ -43,15 +43,14 @@
 **Objective:** Identify runners who experience a substantial drop in pace around the 30K to 35K segment and analyze how this impacts their overall finishing times.
 
 **Data Preparation:** 
-- Calculate pace differences between critical checkpoints, with a focus on the 30K to 35K segment.
+- Calculate pace differences between critical checkpoints.
 - Define a threshold for a “significant drop” in pace based on either average or median pace drops for all runners in these segments.
   
 **Analysis:** 
-- Segment runners into two groups: those with and without significant pace drops in the "wall" segment (30K to 35K).
+- Segment runners into two groups: those with and without significant pace drops.
 - Compare the finishing times between these groups and analyze other factors like age and gender to see if certain demographics are more affected by this drop.
-- Examine any external conditions (from Data set 2) such as temperature or humidity that may correlate with a higher likelihood of "hitting the wall."
   
-**Outcome:** Identify the 30K to 35K checkpoint as a critical area where pace tends to drop significantly, suggesting potential benefit areas for targeted endurance and glycogen management training to improve overall performance.
+**Outcome:** Identify the  checkpoint  where pace tends to drop significantly, identidfying potential correlation with demographics.
 
 
 ---
@@ -61,8 +60,8 @@
 **Training Outcome:** This could be modeled and applied to personalized training.  
 **Objective:** Identify distinct pacing strategies among elite runners and explore if these strategies can be used to guide non-elite runners.  
 **Data Preparation:** 
-- Classify runners as elite or non-elite based on their overall position in Data set 1 (e.g., top 5% of finishers).
-- Calculate pacing patterns of elite runners across checkpoints and determine common strategies (e.g., faster starts, steady pace).  
+- Classify runners as elite or non-elite based on their overall position in Data set 1 (top 5% of finishers).
+- Calculate pacing patterns of elite runners across checkpoints and determine common strategies (inconsistent & steady pace).  
 **Analysis:** 
 - Compare the pacing patterns of elite and non-elite runners. 
 **Outcome:** Identify pacing strategies used by top performers and evaluate their potential effectiveness if adapted for non-elite runners in training.
@@ -74,21 +73,20 @@
 **Training Outcome:** This highlights a strategy for pacing adjustments and stamina training.  
 **Objective:** Determine if runners with negative splits (faster in the second half) consistently finish with better times.  
 **Data Preparation:** 
-- Identify runners who achieved negative splits in Data set 1 by comparing first and second-half times.
+- Identify runners who achieved negative splits by comparing first and second-half times.
 - Calculate and categorize finishing times for runners with and without negative splits.  
 **Analysis:** 
-- Perform statistical comparisons to confirm if negative splits correlate with faster overall times.
-- Investigate if weather conditions (from Data set 2) impact the likelihood of achieving negative splits.  
+- Perform statistical comparisons to confirm if negative splits correlate with faster overall times. 
 **Outcome:** Validate if training for negative splits improves performance, justifying a training focus on endurance and pacing consistency in the second half of races.
 
 ---
 
 ## H4: Performance Improvement Over Time
-**Hypothesis:** Runners who participated in at least two Boston Marathons between 2015 and 2017 demonstrate significant improvements in pacing and finishing times compared to their initial performance.  
+**Hypothesis:** Runners who participated in at least two Boston Marathons between 2015 and 2017 demonstrate improvements in pacing and finishing times compared to their initial performance.  
 **Training Outcome:** This improvement is influenced by factors such as training adjustments, familiarity with the race conditions, and weather variations.  
 **Objective:** Determine if runners who participated in multiple Boston Marathons show measurable improvements in their pacing and finishing times compared to their first race.  
 **Data Preparation:** 
-- Identify runnerswho participated in at least two Boston Marathons between 2015 and 2017.
+- Identify runners who participated in at least two Boston Marathons between 2015 and 2017.
 - Extract performance metrics, including finishing times and pacing data, for each runner across all marathons.
 - Categorize data by initial performance (first marathon) and subsequent performances.
 - Calculate the progression using first 
@@ -128,12 +126,12 @@ Determine the effectiveness of machine learning models in predicting marathon fi
 | Day 1 | Topic selection with business and hypothesis question, GitHub repo |
 | Day 2 | Topic selection with business and hypothesis question|
 | Day 3 | Data import, Data Cleaning (Python)  |
-| Day 4 | Data preparation, analysis, and vizualization for H1,H2 (SQL + Tableau) |
-| Day 5 | Data preparation, analysis, and vizualization for H3,H4,H5 (SQL + Tableau)|
-| Day 6 | Data preparation, analysis, and vizualization for H6  (Python = Tableau)|
-| Day 7 | Structuration & Organization of project: cleaning Notebook and MySQL files, update readme.file if any changes  |
-| Day 8 | Extra-day, in case any of the previous tasks listed above are not completed |
-| Day 9 | Final presenation preparation |
+| Day 4 | EDA (SQL + Python)
+| Day 5 | Data preparation & analysis for H1 (SQL + Python) |
+| Day 6 | Data preparation & analysis, for H2,H3 (SQL + Python)|
+| Day 7 | Data preparation & analysis, for H4,H5 (SQL + Python)|
+| Day 8 | Visiualization on Tableau, Final presenation preparation  |
+| Day 9 | Final presenation preparation, final corrections |
 | Day 10 | Final presentation, Github final touch ups |
 
 
