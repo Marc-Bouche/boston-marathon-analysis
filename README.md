@@ -19,26 +19,34 @@
 - **`function.py`**: Contains all the functions present in `Code.ipynb`.  
 - **{Folder} `.csv` files**: Contains all CSV files used for the analysis.  
 - **{Folder} `.sql` files**: Contains all SQL files used for the analysis.  
-- **{Folder} `hyper_and_twb_files`**: Contains Tableau files.  
+- **{Folder} `hyper_and_twb_files`**: Contains Tableau files.
 
 ---
 
-# 🎯 PITCH
+## 📊 Tableau
+- #### [**Demographic visualization**](https://public.tableau.com/app/profile/marc.bouche/viz/Boston_Marathon_Demorgraphics/DemographicInsights)
+- #### [**Hypothesis visualization**](https://public.tableau.com/app/profile/marc.bouche/viz/Boston_Marathon_Performance_Analysis/Story2)
+
+---
+
+---
+
+## 🎯 Pitch
 > With a degree in Sport Training and a passion for long-distance running, you are driven to launch a company specializing in training programs for marathon runners. Leveraging your academic knowledge and firsthand experience as a dedicated runner, your goal is to design tailored, data-informed training solutions that help runners of all levels reach peak performance. From pacing strategies to personalized endurance plans, your analysis is here to help understand marathon challenges and tailor training programs for athletes.
 
 ---
 
-# 📊 DATA COLLECTION
+## 📈 Data collection
 **Three Kaggle Datasets**: Marathon Boston results for the years 2015, 2016, and 2017.
 
 ---
 
-# ❓ BUSINESS QUESTION
+## ❓ Business Question
 **"How can we tailor marathon training programs to optimize finish times by understanding key performance factors across checkpoints, demographic influences, and pacing strategies?"**
 
 ---
 
-# 📚 Hypotheses & Content Overview  
+## 📚 Hypotheses & Content Overview  
 
 ### H1: Checkpoint Drop-Off - *"Hitting the Marathon Wall"*
 - **Hypothesis:** Runners who experience a significant drop in pace between checkpoints are more likely to finish with slower times.  
@@ -100,7 +108,7 @@
 
 ---
 
-# 🗓️ Schedule  
+## 🗓️ Schedule  
 
 | **Date**             | **Description**                                       |
 |-----------------------|-------------------------------------------------------|
