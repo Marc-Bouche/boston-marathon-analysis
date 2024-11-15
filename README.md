@@ -4,135 +4,110 @@
   </h1>
 </div>
 
-
-## Links
+## 🌐 Links
 - ### [**🌐 Kaggle**](https://www.kaggle.com/datasets/rojour/boston-results)
 - ### [**📘 Student Portal | Guideline**](https://my.ironhack.com/cohorts/64f9d71d3689ad002ac79d8b/lms/courses/course-v1:IRONHACK+DAFT4+202409_BER/modules/ironhack-course-chapter_8/units/ironhack-course-chapter_8-sequential-vertical_2)
 - ### [**📂 GitHub: Final Project**](https://github.com/Marc-Bouche/final-project)
 - ### [**🗨️ Presentation**](https://docs.google.com/presentation/d/1h-ykC9EjER1dtvpqKTz3Wb-pNkcOA2AqpSpj7C4jCyI/edit#slide=id.p)
 
-# PITCH
+---
 
+## 📁 Github Structure  
+- **`README.md`**: Describes what the project is and how it is structured.  
+- **`Code.ipynb`**: Coding file that contains data import, cleaning, and wrangling, hypothesis with statistical tests.  
+- **`.gitignore`**: Irrelevant, deleted, or draft files that were used during the project but are not part of the final commit.  
+- **`function.py`**: Contains all the functions present in `Code.ipynb`.  
+- **{Folder} `.csv` files**: Contains all CSV files used for the analysis.  
+- **{Folder} `.sql` files**: Contains all SQL files used for the analysis.  
+- **{Folder} `hyper_and_twb_files`**: Contains Tableau files.  
+
+---
+
+# 🎯 PITCH
 > With a degree in Sport Training and a passion for long-distance running, you are driven to launch a company specializing in training programs for marathon runners. Leveraging your academic knowledge and firsthand experience as a dedicated runner, your goal is to design tailored, data-informed training solutions that help runners of all levels reach peak performance. From pacing strategies to personalized endurance plans, your analysis is here to help understand marathon challenges and tailor training programs for athletes.
 
 ---
 
-# DATA COLLECTION
-
-1. **Three Kaggle Datasets**: Marathon Boston results for the years 2015, 2016, and 2017.
-
+# 📊 DATA COLLECTION
+**Three Kaggle Datasets**: Marathon Boston results for the years 2015, 2016, and 2017.
 
 ---
 
-# BUSINESS QUESTION
-
+# ❓ BUSINESS QUESTION
 **"How can we tailor marathon training programs to optimize finish times by understanding key performance factors across checkpoints, demographic influences, and pacing strategies?"**
 
 ---
-# Hypothesis Overview
+
+# 📚 Hypotheses & Content Overview  
+
+### H1: Checkpoint Drop-Off - *"Hitting the Marathon Wall"*
+- **Hypothesis:** Runners who experience a significant drop in pace between checkpoints are more likely to finish with slower times.  
+- **Training Outcome:** Targeted endurance and glycogen management training to sustain energy and reduce pace drops.  
+- **Objective:** Identify runners with substantial pace drops (30K–35K segment) and analyze the impact on finishing times.  
+- **Data Preparation:**  
+  - Calculate pace differences between critical checkpoints.  
+  - Define a threshold for a “significant drop.”  
+- **Analysis:**  
+  - Segment runners into groups with/without significant pace drops.  
+  - Compare finishing times and demographics.  
+- **Outcome:** Pinpoint key checkpoints for pace drops and their demographic impact.
 
 ---
 
-## H1: Checkpoint Drop-Off - "Hitting the Marathon Wall"
-**Hypothesis:** Runners who experience a significant drop in pace between checkpoints are more likely to finish with slower times.
-
-**Definition "Hitting the Marathon Wall":** a condition of sudden fatigue and loss of energy which is caused by the depletion of glycogen stores in the liver and muscles.
-
-**Training Outcome:** If specific runners frequently experience pace drops at these checkpoints, they may benefit from targeted endurance and glycogen management training to sustain energy and reduce the likelihood of "hitting the wall."
-
-**Objective:** Identify runners who experience a substantial drop in pace around the 30K to 35K segment and analyze how this impacts their overall finishing times.
-
-**Data Preparation:** 
-- Calculate pace differences between critical checkpoints.
-- Define a threshold for a “significant drop” in pace based on either average or median pace drops for all runners in these segments.
-  
-**Analysis:** 
-- Segment runners into two groups: those with and without significant pace drops.
-- Compare the finishing times between these groups and analyze other factors like age and gender to see if certain demographics are more affected by this drop.
-  
-**Outcome:** Identify the  checkpoint  where pace tends to drop significantly, identidfying potential correlation with demographics.
-
+### H2: Top Performer Strategy
+- **Hypothesis:** Elite runners follow distinct pacing strategies compared to non-elite runners.  
+- **Training Outcome:** Develop personalized training models for non-elite runners.  
+- **Objective:** Analyze pacing patterns of elite runners (top 5% of finishers) and their adaptability to other runners.  
+- **Data Preparation:**  
+  - Classify runners as elite or non-elite.  
+  - Compare pacing patterns.  
+- **Outcome:** Identify effective pacing strategies.
 
 ---
 
-## H2: Top Performer Strategy
-**Hypothesis:** Elite runners follow distinct pacing strategies compared to non-elite runners.  
-**Training Outcome:** This could be modeled and applied to personalized training.  
-**Objective:** Identify distinct pacing strategies among elite runners and explore if these strategies can be used to guide non-elite runners.  
-**Data Preparation:** 
-- Classify runners as elite or non-elite based on their overall position in Data set 1 (top 5% of finishers).
-- Calculate pacing patterns of elite runners across checkpoints and determine common strategies (inconsistent & steady pace).  
-**Analysis:** 
-- Compare the pacing patterns of elite and non-elite runners. 
-**Outcome:** Identify pacing strategies used by top performers and evaluate their potential effectiveness if adapted for non-elite runners in training.
+### H3: Improvement Potential
+- **Hypothesis:** Runners achieving negative splits (faster second half) consistently finish faster.  
+- **Training Outcome:** Focus on pacing adjustments and stamina training.  
+- **Objective:** Evaluate the correlation between negative splits and overall finishing times.  
+- **Data Preparation:**  
+  - Identify negative split runners.  
+  - Categorize finishing times.  
+- **Outcome:** Validate the effectiveness of negative split strategies.
 
 ---
 
-## H3: Improvement Potential
-**Hypothesis:** Runners who achieve negative splits (faster times in the second half) finish, in average, with better overall times.’.  
-**Training Outcome:** This highlights a strategy for pacing adjustments and stamina training.  
-**Objective:** Determine if runners with negative splits (faster in the second half) consistently finish with better times.  
-**Data Preparation:** 
-- Identify runners who achieved negative splits by comparing first and second-half times.
-- Calculate and categorize finishing times for runners with and without negative splits.  
-**Analysis:** 
-- Perform statistical comparisons to confirm if negative splits correlate with faster overall times. 
-**Outcome:** Validate if training for negative splits improves performance, justifying a training focus on endurance and pacing consistency in the second half of races.
+### H4: Performance Improvement Over Time
+- **Hypothesis:** Runners participating in multiple Boston Marathons show measurable improvements in performance.  
+- **Training Outcome:** Insights into training adaptations and race familiarity.  
+- **Objective:** Analyze performance metrics over multiple races.  
+- **Data Preparation:**  
+  - Identify repeat participants.  
+  - Compare pacing and finishing times across races.  
+- **Outcome:** Highlight improvement trends and influencing factors.
 
 ---
 
-## H4: Performance Improvement Over Time
-**Hypothesis:** Runners who participated in at least two Boston Marathons between 2015 and 2017 demonstrate improvements in pacing and finishing times compared to their initial performance.  
-**Training Outcome:** This improvement is influenced by factors such as training adjustments, familiarity with the race conditions, and weather variations.  
-**Objective:** Determine if runners who participated in multiple Boston Marathons show measurable improvements in their pacing and finishing times compared to their first race.  
-**Data Preparation:** 
-- Identify runners who participated in at least two Boston Marathons between 2015 and 2017.
-- Extract performance metrics, including finishing times and pacing data, for each runner across all marathons.
-- Categorize data by initial performance (first marathon) and subsequent performances.
-- Calculate the progression using first 
-**Analysis:** 
-- Use statistical tests (paired t-tests)
+### H5: Time Prediction
+- **Hypothesis:** Demographics, pacing, and checkpoint data can predict marathon finish times.  
+- **Training Outcome:** Tailored training programs based on predictive outcomes.  
+- **Objective:** Evaluate machine learning models for predicting finish times.  
+- **Data Preparation:**  
+  - Extract demographic, pacing, and checkpoint data.  
+  - Train models with selected features.  
+- **Analysis:**  
+  - Use ML algorithms (e.g., linear regression, random forest).  
+- **Outcome:** Accurate predictions to guide training efforts.
 
 ---
 
-## H5: Time Prediction
-**Hypothesis:**Using demographic, pacing, and checkpoint data, we can predict marathon finish times accurately to help runners set realistic goals and identify training focus areas.
-
-**Training Outcome:**
-This model could assist in tailoring training programs to individual runner profiles based on predicted performance outcomes.
-
-**Objective:**
-Determine the effectiveness of machine learning models in predicting marathon finish times using a combination of demographic information and pacing data.
-
-**Data Preparation:** 
-- From Data set 1, gather demographic data (age, gender, etc.) along with pacing and checkpoint performance data for all runners.
-- Identify key features for the machine learning model, such as overall pace, checkpoint times, demographic variables, and any other relevant metrics.
-- Split the data into training and testing sets to evaluate model performance.
-- Create a ‘time’ bin of minutes. Prediction for second would be specific and very unlikely to get high score.
-
-**Analysis:**
-- Implement various machine learning algorithms (e.g., linear regression, random forest, or gradient boosting) to develop models that predict finish times based on the selected features.
-- Use cross-validation techniques to assess the robustness of the model and fine-tune hyperparameters for improved accuracy.
-- Analyze the model’s predictions against actual finish times to quantify performance and determine the model's effectiveness in helping runners set realistic goals.
-
-**Outcome:**
-- Validate whether machine learning can accurately predict marathon finish times, thus providing valuable insights for runners in establishing achievable goals and focusing their training efforts based on predictive outcomes. This could lead to more personalized and effective training programs that cater to individual runner profiles.
-
----
-# Schedule
+# 🗓️ Schedule  
 
 | **Date**             | **Description**                                       |
-|-------------------------|-------------------------------------------------------|
-| Day 1 | Topic selection with business and hypothesis question, GitHub repo |
-| Day 2 | Topic selection with business and hypothesis question|
-| Day 3 | Data import, Data Cleaning (Python)  |
-| Day 4 | EDA (SQL + Python)
-| Day 5 | Data preparation & analysis for H1 (SQL + Python) |
-| Day 6 | Data preparation & analysis, for H2,H3 (SQL + Python)|
-| Day 7 | Data preparation & analysis, for H4,H5 (SQL + Python)|
-| Day 8 | Visiualization on Tableau, Final presenation preparation  |
-| Day 9 | Final presenation preparation, final corrections |
-| Day 10 | Final presentation, Github final touch ups |
-
-
-
+|-----------------------|-------------------------------------------------------|
+| **Day 1**            | Topic selection with business and hypothesis question; GitHub repo setup. |
+| **Day 2**            | Data import, cleaning (Python).                       |
+| **Day 3**            | Exploratory Data Analysis (EDA) using SQL & Python.   |
+| **Day 4–7**          | Data preparation & hypothesis testing (H1–H5).        |
+| **Day 8**            | Visualizations in Tableau; final presentation prep.   |
+| **Day 9**            | Final corrections; complete presentation slides.      |
+| **Day 10**           | Final presentation and GitHub polish.                 |
