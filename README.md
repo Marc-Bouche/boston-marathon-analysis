@@ -29,8 +29,6 @@
 
 ---
 
----
-
 ## 🎯 Pitch
 > With a degree in Sport Training and a passion for long-distance running, you are driven to launch a company specializing in training programs for marathon runners. Leveraging your academic knowledge and firsthand experience as a dedicated runner, your goal is to design tailored, data-informed training solutions that help runners of all levels reach peak performance. From pacing strategies to personalized endurance plans, your analysis is here to help understand marathon challenges and tailor training programs for athletes.
 
