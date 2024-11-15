@@ -6,3 +6,4 @@ eda_1+.hyper
 eda_2.hyper
 eda_3.hyper
 .DS_Store
+.cache.sqlite
