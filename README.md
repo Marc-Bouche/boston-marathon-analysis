@@ -6,7 +6,6 @@
 
 ## 🌐 Links
 - ### [**🌐 Kaggle**](https://www.kaggle.com/datasets/rojour/boston-results)
-- ### [**📘 Student Portal | Guideline**](https://my.ironhack.com/cohorts/64f9d71d3689ad002ac79d8b/lms/courses/course-v1:IRONHACK+DAFT4+202409_BER/modules/ironhack-course-chapter_8/units/ironhack-course-chapter_8-sequential-vertical_2)
 - ### [**📂 GitHub: Final Project**](https://github.com/Marc-Bouche/final-project)
 - ### [**🗨️ Presentation**](https://docs.google.com/presentation/d/1h-ykC9EjER1dtvpqKTz3Wb-pNkcOA2AqpSpj7C4jCyI/edit#slide=id.p)
 
