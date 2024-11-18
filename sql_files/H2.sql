@@ -285,5 +285,24 @@ FROM
 GROUP BY 
     Status;
     
-    #----------------------------------------------------------------------------------------------------------------------------#
-    
+#----------------------------------------------------------------------------------------------------------------------------#
+-- Add the 'year' column to each table
+ALTER TABLE H2_2015_status_count ADD COLUMN year INT;
+ALTER TABLE H2_2016_status_count ADD COLUMN year INT;
+ALTER TABLE H2_2017_status_count ADD COLUMN year INT;
+
+-- Update the 'year' column with the correct year for each table
+UPDATE H2_2015_status_count SET year = 2015;
+UPDATE H2_2016_status_count SET year = 2016;
+UPDATE H2_2017_status_count SET year = 2017;
+
+CREATE TABLE H2_all_year_status_count AS
+SELECT * FROM H2_2015_status_count
+UNION ALL
+SELECT * FROM H2_2016_status_count
+UNION ALL
+SELECT * FROM H2_2017_status_count;
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------#
