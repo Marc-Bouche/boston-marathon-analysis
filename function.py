@@ -96,3 +96,5 @@ def time_to_seconds(time_str):
             hours, minutes, seconds = parts
             return int(hours) * 3600 + int(minutes) * 60 + int(seconds)
     return 0
+    
+#---------------------------------------------------------------------------------------------------#
