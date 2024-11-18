@@ -99,7 +99,7 @@
 - **Objective:** Evaluate machine learning models for predicting finish times.  
 - **Data Preparation:**  
   - Extract demographic, pacing, and checkpoint data.  
-  - Train models with selected features.  
+  - Train models with selected features..
 - **Analysis:**  
   - Use ML algorithms (e.g., linear regression, random forest).  
 - **Outcome:** Accurate predictions to guide training efforts.
