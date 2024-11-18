@@ -25,7 +25,7 @@
 
 ## 📊 Tableau
 - #### [**Demographic visualization**](https://public.tableau.com/app/profile/marc.bouche/viz/Boston_Marathon_Demorgraphics/DemographicInsights)
-- #### [**Hypothesis visualization**](https://public.tableau.com/app/profile/marc.bouche/viz/Boston_Marathon_Performance_Analysis/Story2)
+- #### [**Hypotheses visualization**](https://public.tableau.com/app/profile/marc.bouche/viz/Boston_Marathon_Performance_Analysis/Story2)
 
 ---
 
