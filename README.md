@@ -1,6 +1,6 @@
 <div align="center">
   <h1 style="color: #4CAF50; font-size: 3em; font-family: Arial, sans-serif;">
-     <b>Boston Marathon Athletes Perforance Analysis</b> 
+     <b>Boston Marathon Athletes Performance Analysis</b> 
   </h1>
 </div>
 
