@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-## 🌐 Links
+## 👇 Links
 - ### [**🌐 Kaggle**](https://www.kaggle.com/datasets/rojour/boston-results)
 - ### [**📂 GitHub: Final Project**](https://github.com/Marc-Bouche/final-project)
 - ### [**🗨️ Presentation**](https://docs.google.com/presentation/d/1h-ykC9EjER1dtvpqKTz3Wb-pNkcOA2AqpSpj7C4jCyI/edit#slide=id.p)
